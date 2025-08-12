@@ -1,103 +1,683 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	return (
+		<div className='min-h-screen bg-white'>
+			{/* Navigation */}
+			<nav className='fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100'>
+				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<div className='flex justify-between items-center h-16'>
+						<div className='text-xl font-bold text-gray-900'>Portfolio</div>
+						<div className='hidden md:flex space-x-8'>
+							<a
+								href='#top'
+								className='text-gray-700 hover:text-orange-500 transition-colors'
+							>
+								TOP
+							</a>
+							<a
+								href='#about'
+								className='text-gray-700 hover:text-orange-500 transition-colors'
+							>
+								ABOUT
+							</a>
+							<a
+								href='#works'
+								className='text-gray-700 hover:text-orange-500 transition-colors'
+							>
+								WORKS
+							</a>
+							<a
+								href='#contact'
+								className='text-gray-700 hover:text-orange-500 transition-colors'
+							>
+								CONTACT
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+			{/* TOP Section */}
+			<section
+				id='top'
+				className='pt-20 pb-16 bg-gradient-to-br from-orange-50 to-white'
+			>
+				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<div className='text-center'>
+						<h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
+							Welcome to My
+							<span className='text-orange-500'> Portfolio</span>
+						</h1>
+						<p className='text-xl text-gray-600 mb-8 max-w-2xl mx-auto'>
+							Creative developer passionate about building beautiful and
+							functional web experiences
+						</p>
+						<a
+							href='#works'
+							className='inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors'
+						>
+							View My Work
+						</a>
+					</div>
+				</div>
+			</section>
+
+			{/* ABOUT Section */}
+			<section id='about' className='py-16 bg-white'>
+				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<div className='text-center mb-12'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+							ABOUT
+						</h2>
+						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
+					</div>
+					<div className='grid md:grid-cols-2 gap-12 items-center'>
+						<div>
+							<h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+								Who I Am
+							</h3>
+							<p className='text-gray-600 mb-6 leading-relaxed'>
+								小さい頃からピアノ漬けで音楽高校・音楽大学に進学
+								音楽の仕事が無くて絶望。
+								教員、販売員などを経て、webデザインと出会い、、忘れていたものづくりへの情熱を取り戻す。
+								webコーダーからはじめ、現在はNext.jsをメインにフロントエンジニアのような事をやっています。
+							</p>
+							<p className='text-gray-600 leading-relaxed'>
+								{/* My approach combines technical excellence with creative
+								problem-solving, ensuring every project not only meets but
+								exceeds expectations. */}
+							</p>
+						</div>
+						<div className='bg-orange-50 p-8 rounded-lg'>
+							<h4 className='text-xl font-semibold text-gray-900 mb-4'>
+								Skills
+							</h4>
+							<div className='space-y-3'>
+								<div className='flex justify-between items-center'>
+									<span className='text-gray-700'>Frontend Development</span>
+									<div className='w-32 h-2 bg-gray-200 rounded-full'>
+										<div className='w-24 h-2 bg-orange-500 rounded-full'></div>
+									</div>
+								</div>
+								<div className='flex justify-between items-center'>
+									<span className='text-gray-700'>UI/UX Design</span>
+									<div className='w-32 h-2 bg-gray-200 rounded-full'>
+										<div className='w-20 h-2 bg-orange-500 rounded-full'></div>
+									</div>
+								</div>
+								<div className='flex justify-between items-center'>
+									<span className='text-gray-700'>Backend Development</span>
+									<div className='w-32 h-2 bg-gray-200 rounded-full'>
+										<div className='w-28 h-2 bg-orange-500 rounded-full'></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* WORKS Section */}
+			<section id='works' className='py-16 bg-gray-50'>
+				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<div className='text-center mb-12'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+							WORKS
+						</h2>
+						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
+					</div>
+
+					{/* Website Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+							Website
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* Website Work Item 1 */}
+							<Link
+								href='https://issun-app.vercel.app/top'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/issun_top.png'
+										alt='低身長向けファッションアプリ'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										低身長向けファッションアプリ
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										ZOZOTOWNやユニクロなどから、低身長でも似合う服が集まるwebサービスを作りたかった。口コミの投稿なども出来る。
+										<br />
+										github
+										<Link
+											href='https://github.com/your-username/issun-app'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-orange-500 hover:text-orange-600 underline'
+										>
+											View on GitHub
+										</Link>
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Tailwind
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											firebase
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							{/* Website Work Item 2 */}
+							<Link
+								href='https://salon-murex.vercel.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/salon-site.png'
+										alt='サロンサイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										salon
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										クライアントワークで作成した美容院のサイトのモック{" "}
+										<Link
+											href='https://github.com/your-username/salon-site'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-orange-500 hover:text-orange-600 underline'
+										>
+											View on GitHub
+										</Link>
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											HTML
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											CSS
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Javascript
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							{/* Website Work Item 3 */}
+							<Link
+								href='https://issun-app.vercel.app/top'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/portfolio.png'
+										alt='ポートフォリオサイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Portfolio Website
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										A responsive portfolio website showcasing creative work with
+										smooth animations and modern design principles.{" "}
+										<Link
+											href='https://github.com/your-username/portfolio-2025'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-orange-500 hover:text-orange-600 underline'
+										>
+											View on GitHub
+										</Link>
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											TypeScript
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Framer Motion
+										</span>
+									</div>
+								</div>
+							</Link>
+						</div>
+					</div>
+
+					{/* Design Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+							Design
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* Design Work Item 1 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										Design Mockup
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Brand Identity Design
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Complete brand identity package including logo design, color
+										palette, typography, and brand guidelines for a tech
+										startup.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Adobe Illustrator
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Branding
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Logo Design
+										</span>
+									</div>
+								</div>
+							</div>
+
+							{/* Design Work Item 2 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										Design Mockup
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										UI/UX Design System
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Comprehensive design system for a mobile app, including
+										component library, user flows, and interactive prototypes.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Figma
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											UI/UX
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Prototyping
+										</span>
+									</div>
+								</div>
+							</div>
+
+							{/* Design Work Item 3 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										Design Mockup
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Print Design Collection
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Series of print materials including business cards,
+										brochures, and marketing collateral with consistent visual
+										identity.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Adobe InDesign
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Print Design
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Typography
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* Music Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+							Music
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* Music Work Item 1 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										Album Cover
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Original Song "Sunset Dreams"
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										An ambient electronic track featuring atmospheric
+										synthesizers and dreamy melodies, perfect for relaxation and
+										meditation.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Ableton Live
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Synthesizers
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Ambient
+										</span>
+									</div>
+								</div>
+							</div>
+
+							{/* Music Work Item 2 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										Album Cover
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Jazz Fusion EP
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										A collection of jazz fusion tracks blending traditional jazz
+										elements with modern electronic production techniques.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Logic Pro
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Jazz Fusion
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Live Recording
+										</span>
+									</div>
+								</div>
+							</div>
+
+							{/* Music Work Item 3 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										Album Cover
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Soundtrack for Short Film
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Original soundtrack composed for an independent short film,
+										featuring orchestral arrangements and emotional themes.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Cubase
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Orchestral
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Film Score
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* 3DCG Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+							3DCG
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* 3DCG Work Item 1 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+                <Image
+										src='/images/MYROOM.png'
+										alt='3DCG'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										rooms
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										<Link
+											href='https://first-threejs-roan.vercel.app/'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-orange-500 hover:text-orange-600 underline'
+										>
+											web site
+										</Link>
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Blender
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Product Design
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Rendering
+										</span>
+									</div>
+								</div>
+							</div>
+
+							{/* 3DCG Work Item 2 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										3D Render
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Architectural Visualization
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Realistic architectural renders for a residential project,
+										featuring detailed interior and exterior views with natural
+										lighting.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											3ds Max
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Architecture
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											V-Ray
+										</span>
+									</div>
+								</div>
+							</div>
+
+							{/* 3DCG Work Item 3 */}
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<span className='text-orange-600 font-semibold'>
+										3D Render
+									</span>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Character Animation
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Animated 3D character for a short film project, including
+										rigging, facial expressions, and walk cycle animations.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Maya
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Animation
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Character Design
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* CONTACT Section */}
+			<section id='contact' className='py-16 bg-white'>
+				<div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
+					<div className='text-center mb-12'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+							CONTACT
+						</h2>
+						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
+					</div>
+					<div className='grid md:grid-cols-2 gap-12'>
+						<div>
+							<h3 className='text-2xl font-semibold text-gray-900 mb-6'>
+								Get In Touch
+							</h3>
+							<p className='text-gray-600 mb-8'>
+								I'm always interested in new opportunities and exciting
+								projects. Feel free to reach out if you'd like to work together
+								or just say hello!
+							</p>
+							<div className='space-y-4'>
+								<div className='flex items-center space-x-3'>
+									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
+										<span className='text-orange-600 font-semibold'>📧</span>
+									</div>
+									<div>
+										<p className='font-semibold text-gray-900'>Email</p>
+										<p className='text-gray-600'>hello@example.com</p>
+									</div>
+								</div>
+								<div className='flex items-center space-x-3'>
+									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
+										<span className='text-orange-600 font-semibold'>📱</span>
+									</div>
+									<div>
+										<p className='font-semibold text-gray-900'>Phone</p>
+										<p className='text-gray-600'>+1 (555) 123-4567</p>
+									</div>
+								</div>
+								<div className='flex items-center space-x-3'>
+									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
+										<span className='text-orange-600 font-semibold'>📍</span>
+									</div>
+									<div>
+										<p className='font-semibold text-gray-900'>Location</p>
+										<p className='text-gray-600'>Tokyo, Japan</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className='bg-orange-50 p-8 rounded-lg'>
+							<h4 className='text-xl font-semibold text-gray-900 mb-6'>
+								Send a Message
+							</h4>
+							<form className='space-y-4'>
+								<div>
+									<label className='block text-sm font-medium text-gray-700 mb-2'>
+										Name
+									</label>
+									<input
+										type='text'
+										className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent'
+										placeholder='Your name'
+									/>
+								</div>
+								<div>
+									<label className='block text-sm font-medium text-gray-700 mb-2'>
+										Email
+									</label>
+									<input
+										type='email'
+										className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent'
+										placeholder='your@email.com'
+									/>
+								</div>
+								<div>
+									<label className='block text-sm font-medium text-gray-700 mb-2'>
+										Message
+									</label>
+									<textarea
+										rows={4}
+										className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent'
+										placeholder='Your message...'
+									></textarea>
+								</div>
+								<button
+									type='submit'
+									className='w-full bg-orange-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors'
+								>
+									Send Message
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Footer */}
+			<footer className='bg-gray-900 text-white py-8'>
+				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+					<p>&copy; 2025 Portfolio. All rights reserved.</p>
+				</div>
+			</footer>
+		</div>
+	);
 }
