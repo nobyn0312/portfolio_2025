@@ -203,15 +203,8 @@ export default function Home() {
 										salon
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										クライアントワークで作成した美容院のサイトのモック{" "}
-										<Link
-											href='https://github.com/your-username/salon-site'
-											target='_blank'
-											rel='noopener noreferrer'
-											className='text-orange-500 hover:text-orange-600 underline'
-										>
-											View on GitHub
-										</Link>
+										クライアントワークで作成した美容院のサイトのモック
+										<br />
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
@@ -284,19 +277,33 @@ export default function Home() {
 							{/* Design Work Item 1 */}
 							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										Design Mockup
-									</span>
+									<Image
+										src='/images/ISSUN_design.png'
+										alt='ISSUN_figma'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
 								</div>
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Brand Identity Design
+										ISSUNデザインFigma
 									</h3>
 									<p className='text-gray-600 mb-4'>
 										Complete brand identity package including logo design, color
 										palette, typography, and brand guidelines for a tech
 										startup.
 									</p>
+									<br />
+									<Link
+										href='https://www.figma.com/design/hhfRg0imlBFnSP16DglhcL/ISSUN?node-id=0-1&t=WUFd0Nb2bBIas5e4-1'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='text-orange-500 hover:text-orange-600 underline'
+									>
+										Figma
+									</Link>
+
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Adobe Illustrator
@@ -312,82 +319,25 @@ export default function Home() {
 							</div>
 
 							{/* Design Work Item 2 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+							<Link
+								href='https://drive.google.com/file/d/11YdUTswrC71ez5_HVwrsZyBab37ucKLd/view'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										Design Mockup
-									</span>
+									<Image
+										src='/images/design-portfolio.png'
+										alt='sungoi'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
 								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										UI/UX Design System
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										Comprehensive design system for a mobile app, including
-										component library, user flows, and interactive prototypes.
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Figma
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											UI/UX
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Prototyping
-										</span>
-									</div>
-								</div>
-							</div>
 
-							{/* Design Work Item 3 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										Design Mockup
-									</span>
-								</div>
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Print Design Collection
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										Series of print materials including business cards,
-										brochures, and marketing collateral with consistent visual
-										identity.
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Adobe InDesign
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Print Design
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Typography
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					{/* Music Category */}
-					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
-							Music
-						</h3>
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-							{/* Music Work Item 1 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										Album Cover
-									</span>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Original Song "Sunset Dreams"
+										訓練校でのデザインポートフォリオ
 									</h3>
 									<p className='text-gray-600 mb-4'>
 										An ambient electronic track featuring atmospheric
@@ -406,65 +356,135 @@ export default function Home() {
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
+						</div>
+					</div>
+
+					{/* Music Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+							Music
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* Music Work Item 1 */}
+							<Link
+								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/NEHAN.png'
+										alt='NEHAN'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										オリジナルソング"NEHAN de ochashite""
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										An ambient electronic track featuring atmospheric
+										synthesizers and dreamy melodies, perfect for relaxation and
+										meditation.
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Ableton Live
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Synthesizers
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Ambient
+										</span>
+									</div>
+								</div>
+							</Link>
 
 							{/* Music Work Item 2 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+							<Link
+								href='https://youtu.be/8kaESsP3sXg?si=jAtoh8RwxPpHiMFD'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										Album Cover
-									</span>
+									<Image
+										src='/images/sungoi.png'
+										alt='sungoi'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
 								</div>
+
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Jazz Fusion EP
+										企業案件"すんごい脳みそ""
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										A collection of jazz fusion tracks blending traditional jazz
-										elements with modern electronic production techniques.
+										An ambient electronic track featuring atmospheric
+										synthesizers and dreamy melodies, perfect for relaxation and
+										meditation.
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Logic Pro
+											Ableton Live
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Jazz Fusion
+											Synthesizers
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Live Recording
+											Ambient
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
 
 							{/* Music Work Item 3 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+							<Link
+								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										Album Cover
-									</span>
+									<Image
+										src='/images/curry.png'
+										alt='curry'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
 								</div>
+
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Soundtrack for Short Film
+										オリジナルソング"Fuck'in spicy curry rice""
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										Original soundtrack composed for an independent short film,
-										featuring orchestral arrangements and emotional themes.
+										An ambient electronic track featuring atmospheric
+										synthesizers and dreamy melodies, perfect for relaxation and
+										meditation.
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Cubase
+											Ableton Live
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Orchestral
+											Synthesizers
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Film Score
+											Ambient
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 					</div>
 
@@ -477,7 +497,7 @@ export default function Home() {
 							{/* 3DCG Work Item 1 */}
 							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-                <Image
+									<Image
 										src='/images/MYROOM.png'
 										alt='3DCG'
 										width={400}
