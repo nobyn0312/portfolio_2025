@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<div className='min-h-screen bg-white'>
 			{/* Navigation */}
-			<nav className='fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100'>
+			<nav className='fixed top-0 w-full  backdrop-blur-md z-50 border-b border-white/20 shadow-lg'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='flex justify-between items-center h-16'>
 						<div className='text-xl font-bold text-gray-900'>Portfolio</div>
@@ -81,7 +81,7 @@ export default function Home() {
 									alt='プロフィール写真'
 									width={300}
 									height={300}
-									className='rounded-full w-64 h-64 object-cover'
+									className='rounded-full w-64 h-64 object-cover border-4 border-orange-500'
 								/>
 							</div>
 						</div>
@@ -93,8 +93,10 @@ export default function Home() {
 							</h3>
 							<p className='text-gray-600 mb-6 leading-relaxed'>
 								小さい頃からピアノ漬けで音楽高校・音楽大学に進学
-								音楽の仕事が無くて絶望。
-								教員、販売員などを経て、webデザインと出会い、忘れていたものづくりへの情熱を取り戻す。
+								<br />
+								世の中に音楽の仕事が無いじゃないかと絶望する。
+								<br />
+								教員、販売員などを経て、webデザインを学び、忘れていたものづくりへの情熱を取り戻す。
 								<br />
 								コーダーを経て、現在はNext.jsやwordpressをメインにフロントエンジニアをやっています。
 							</p>
@@ -390,7 +392,7 @@ export default function Home() {
 
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										オリジナルソング"NEHAN de ochashite""
+										オリジナルソング"NEHAN de ochashite"
 									</h3>
 									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
 									<div className='flex flex-wrap gap-2'>
@@ -426,14 +428,14 @@ export default function Home() {
 
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										企業案件"すんごい脳みそ""
+										企業案件"すんごい脳みそ"
 									</h3>
 									<p className='text-gray-600 mb-4'>
 										XのDMで東北新社様から依頼を受けて制作したものです。
 										<br />
 										歌詞と事業の内容をヒアリングし、作曲をしました。
 										<br />
-										レコーディングにも同行。
+										レコーディングにも同行しました。
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
@@ -465,7 +467,7 @@ export default function Home() {
 
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										オリジナルソング"Fuck'in spicy curry rice""
+										オリジナルソング"Fuck'in spicy curry rice"
 									</h3>
 									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
 									<div className='flex flex-wrap gap-2'>
