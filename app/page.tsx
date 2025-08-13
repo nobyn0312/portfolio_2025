@@ -507,7 +507,7 @@ export default function Home() {
 								</div>
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										rooms
+										Blender/Three.js "Room"
 									</h3>
 									<p className='text-gray-600 mb-4'>
 										<Link
@@ -536,13 +536,17 @@ export default function Home() {
 							{/* 3DCG Work Item 2 */}
 							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										3D Render
-									</span>
+								<Image
+										src='/images/blender.png'
+										alt='sungoi'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
 								</div>
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Architectural Visualization
+										Blenderチュートリアル作品
 									</h3>
 									<p className='text-gray-600 mb-4'>
 										Realistic architectural renders for a residential project,
@@ -558,35 +562,6 @@ export default function Home() {
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											V-Ray
-										</span>
-									</div>
-								</div>
-							</div>
-
-							{/* 3DCG Work Item 3 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<span className='text-orange-600 font-semibold'>
-										3D Render
-									</span>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Character Animation
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										Animated 3D character for a short film project, including
-										rigging, facial expressions, and walk cycle animations.
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Maya
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Animation
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Character Design
 										</span>
 									</div>
 								</div>
