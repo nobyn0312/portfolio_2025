@@ -57,10 +57,10 @@ export default function Home() {
 								WORKS
 							</a>
 							<a
-								href='#contact'
+								href='#LINK'
 								className='text-gray-700 hover:text-orange-500 transition-colors'
 							>
-								CONTACT
+								LINK
 							</a>
 						</div>
 					</div>
@@ -127,11 +127,6 @@ export default function Home() {
 								教員、販売員などを経て、webデザインを学び、忘れていたものづくりへの情熱を取り戻す。
 								<br />
 								コーダーを経て、現在はNext.jsやwordpressをメインにフロントエンジニアをやっています。
-							</p>
-							<p className='text-gray-600 leading-relaxed'>
-								{/* My approach combines technical excellence with creative
-								problem-solving, ensuring every project not only meets but
-								exceeds expectations. */}
 							</p>
 						</div>
 					</div>
@@ -595,12 +590,12 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* CONTACT Section */}
-			<section id='contact' className='py-16 bg-white'>
+			{/* LINK Section */}
+			<section id='LINK' className='py-16 bg-white'>
 				<div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-12'>
 						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
-							CONTACT
+							LINK
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
