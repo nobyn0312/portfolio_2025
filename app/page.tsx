@@ -145,9 +145,8 @@ export default function Home() {
 										低身長向けファッションアプリ
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										ZOZOTOWNやユニクロなどから、低身長でも似合う服が集まるwebサービスを作りたかった。口コミの投稿なども出来る。
+										ZOZOTOWNやユニクロなどから、低身長でも似合う服が集まるwebサービスを考えました。口コミの投稿なども出来るようにしました。
 										<br />
-										github
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
@@ -449,7 +448,7 @@ export default function Home() {
 
 							{/* Music Work Item 3 */}
 							<Link
-								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
+								href='https://youtu.be/5t4FVr7TGHU?si=jFa2mRxQkDYmz7CL'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
@@ -581,7 +580,12 @@ export default function Home() {
 								Get In Touch
 							</h3>
 							<div className='grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center'>
-								<div className='flex items-center space-x-3'>
+								<Link
+									href='https://x.com/igami0312'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='flex items-center space-x-3 hover:scale-105 transition-transform'
+								>
 									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
 										<span className='text-orange-600 font-semibold'>
 											<Image
@@ -597,13 +601,18 @@ export default function Home() {
 										<p className='font-semibold text-gray-900'>X</p>
 										<p className='text-gray-600'>いがみ</p>
 									</div>
-								</div>
-								<div className='flex items-center space-x-3'>
+								</Link>
+								<Link
+									href='https://github.com/nobyn0312'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='flex items-center space-x-3 hover:scale-105 transition-transform'
+								>
 									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
 										<span className='text-orange-600 font-semibold'>
 											<Image
 												src='/images/github.svg'
-												alt='X'
+												alt='GitHub'
 												width={20}
 												height={20}
 												className='w-full h-full object-cover'
@@ -613,13 +622,18 @@ export default function Home() {
 									<div>
 										<p className='font-semibold text-gray-900'>github</p>
 									</div>
-								</div>
-								<div className='flex items-center space-x-3'>
+								</Link>
+								<Link
+									href='https://www.wantedly.com/id/inoue_nobuhide'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='flex items-center space-x-3 hover:scale-105 transition-transform'
+								>
 									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
 										<span className='text-orange-600 font-semibold'>
 											<Image
 												src='/images/wantedly.svg'
-												alt='X'
+												alt='Wantedly'
 												width={20}
 												height={20}
 												className='w-full h-full object-cover'
@@ -629,7 +643,7 @@ export default function Home() {
 									<div>
 										<p className='font-semibold text-gray-900'>wantedly</p>
 									</div>
-								</div>
+								</Link>
 							</div>
 						</div>
 						{/* <div className='bg-orange-50 p-8 rounded-lg'>
