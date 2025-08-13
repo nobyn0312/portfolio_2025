@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "ポートフォリオ",
 		description: "Inoue Nobuhide のポートフォリオサイト",
-		url: "https://portfolio-2025-vert-eight.vercel.app/", // 本番URLに置き換え
+		url: "https://portfolio-2025-vert-eight.vercel.app/",
 		siteName: "ポートフォリオ",
 		images: [
 			{
-				url: "/images/ogp.png", // OGP画像の絶対URL
+				url: "https://portfolio-2025-vert-eight.vercel.app/images/ogp.png",
 				width: 1200,
 				height: 630,
 			},
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image", // 大きい画像表示
 		title: "ポートフォリオ",
 		description: "Inoue Nobuhide のポートフォリオサイト",
-		images: ["/images/ogp.png"], // 絶対URL
+		images: ["https://portfolio-2025-vert-eight.vercel.app/images/ogp.png"],
 		creator: "@igami0312", // 任意
 	},
 };
