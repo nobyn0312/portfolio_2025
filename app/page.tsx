@@ -625,7 +625,7 @@ export default function Home() {
 										<p className='font-semibold text-gray-900'>github</p>
 									</div>
 								</Link>
-								<Link
+								{/* <Link
 									href='https://www.wantedly.com/id/inoue_nobuhide'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -645,7 +645,7 @@ export default function Home() {
 									<div>
 										<p className='font-semibold text-gray-900'>wantedly</p>
 									</div>
-								</Link>
+								</Link> */}
 							</div>
 						</div>
 						{/* <div className='bg-orange-50 p-8 rounded-lg'>
