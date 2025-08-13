@@ -67,7 +67,7 @@ export default function Home() {
 			{/* ABOUT Section */}
 			<section id='about' className='py-16 bg-white'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
-					<div className='text-center mb-12'>
+					<div className='text-center mb-4'>
 						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
 							ABOUT
 						</h2>
@@ -578,9 +578,9 @@ export default function Home() {
 					</div>
 					<div className='flex justify-center items-center'>
 						<div>
-							<h3 className='text-2xl font-semibold text-gray-900 mb-6'>
+							{/* <h3 className='text-2xl font-semibold text-gray-900 mb-6'>
 								Get In Touch
-							</h3>
+							</h3> */}
 							<div className='grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center'>
 								<Link
 									href='https://x.com/igami0312'
