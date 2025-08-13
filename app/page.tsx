@@ -1,5 +1,33 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "ポートフォリオ",
+	description: "Inoue Nobuhide のポートフォリオサイト",
+	openGraph: {
+		title: "ポートフォリオ",
+		description: "Inoue Nobuhide のポートフォリオサイト",
+		url: "https://portfolio-2025-vert-eight.vercel.app/", // 本番URLに置き換え
+		siteName: "ポートフォリオ",
+		images: [
+			{
+				url: "/images/ogp.png", // OGP画像の絶対URL
+				width: 1200,
+				height: 630,
+			},
+		],
+		locale: "ja_JP",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image", // 大きい画像表示
+		title: "ポートフォリオ",
+		description: "Inoue Nobuhide のポートフォリオサイト",
+		images: ["/images/ogp.png"], // 絶対URL
+		creator: "@igami0312", // 任意
+	},
+};
 
 export default function Home() {
 	return (
