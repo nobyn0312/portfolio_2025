@@ -70,7 +70,7 @@ export default function Home() {
 			{/* TOP Section */}
 			<section
 				id='top'
-				className='pt-20 pb-16 bg-gradient-to-br from-orange-50 to-white'
+				className='pt-20 pb-4 bg-gradient-to-br from-orange-50 to-white'
 			>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center'>
@@ -101,7 +101,7 @@ export default function Home() {
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
-					<div className='max-w-4xl mx-auto py-8 sm:px-2 lg:px-4 mb-4'>
+					<div className='max-w-4xl mx-auto py-16 sm:px-2 lg:px-4 mb-4'>
 						<div className='text-center'>
 							<div className='relative inline-block'>
 								<div className='shape-2'></div>
