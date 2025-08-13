@@ -292,7 +292,7 @@ export default function Home() {
 								href='https://drive.google.com/file/d/11YdUTswrC71ez5_HVwrsZyBab37ucKLd/view'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
