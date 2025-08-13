@@ -629,7 +629,6 @@ export default function Home() {
 									</div>
 									<div>
 										<p className='font-semibold text-gray-900'>X</p>
-										<p className='text-gray-600'>いがみ</p>
 									</div>
 								</Link>
 								<Link
@@ -671,9 +670,30 @@ export default function Home() {
 										</span>
 									</div>
 									<div>
-										<p className='font-semibold text-gray-900'>wantedly</p>
+										<p className='font-semibold text-gray-900'>Zenn</p>
 									</div>
 								</Link> */}
+								<Link
+									href='https://zenn.dev/nobyn0312'
+									target='_blank'
+									rel='noopener noreferrer'
+									className='flex items-center space-x-3 hover:scale-105 transition-transform'
+								>
+									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
+										<span className='text-orange-600 font-semibold'>
+											<Image
+												src='/images/zenn.svg'
+												alt='zenn'
+												width={20}
+												height={20}
+												className='w-full h-full object-cover'
+											/>
+										</span>
+									</div>
+									<div>
+										<p className='font-semibold text-gray-900'>Zenn</p>
+									</div>
+								</Link>
 							</div>
 						</div>
 						{/* <div className='bg-orange-50 p-8 rounded-lg'>
