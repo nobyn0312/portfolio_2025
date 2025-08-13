@@ -47,19 +47,19 @@ export default function Home() {
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center'>
 						<h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
-							Welcome to My
+							My
 							<span className='text-orange-500'> Portfolio</span>
 						</h1>
-						<p className='text-xl text-gray-600 mb-8 max-w-2xl mx-auto'>
+						{/* <p className='text-xl text-gray-600 mb-8 max-w-2xl mx-auto'>
 							Creative developer passionate about building beautiful and
 							functional web experiences
-						</p>
-						<a
+						</p> */}
+						{/* <a
 							href='#works'
 							className='inline-block bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors'
 						>
 							View My Work
-						</a>
+						</a> */}
 					</div>
 				</div>
 			</section>
@@ -73,47 +73,36 @@ export default function Home() {
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
-					<div className='grid md:grid-cols-2 gap-12 items-center'>
+					<div className='max-w-4xl mx-auto py-8 sm:px-2 lg:px-4'>
+						<div className='text-center'>
+							<div className='inline-block'>
+								<Image
+									src='/images/profile.jpg'
+									alt='プロフィール写真'
+									width={300}
+									height={300}
+									className='rounded-full w-64 h-64 object-cover'
+								/>
+							</div>
+						</div>
+					</div>
+					<div className='max-w-xl mx-auto px-2 sm:px-2 lg:px-4 items-center'>
 						<div>
 							<h3 className='text-2xl font-semibold text-gray-900 mb-4'>
-								Who I Am
+								Inoue Nobuhide
 							</h3>
 							<p className='text-gray-600 mb-6 leading-relaxed'>
 								小さい頃からピアノ漬けで音楽高校・音楽大学に進学
 								音楽の仕事が無くて絶望。
-								教員、販売員などを経て、webデザインと出会い、、忘れていたものづくりへの情熱を取り戻す。
-								webコーダーからはじめ、現在はNext.jsをメインにフロントエンジニアのような事をやっています。
+								教員、販売員などを経て、webデザインと出会い、忘れていたものづくりへの情熱を取り戻す。
+								<br />
+								コーダーを経て、現在はNext.jsやwordpressをメインにフロントエンジニアをやっています。
 							</p>
 							<p className='text-gray-600 leading-relaxed'>
 								{/* My approach combines technical excellence with creative
 								problem-solving, ensuring every project not only meets but
 								exceeds expectations. */}
 							</p>
-						</div>
-						<div className='bg-orange-50 p-8 rounded-lg'>
-							<h4 className='text-xl font-semibold text-gray-900 mb-4'>
-								Skills
-							</h4>
-							<div className='space-y-3'>
-								<div className='flex justify-between items-center'>
-									<span className='text-gray-700'>Frontend Development</span>
-									<div className='w-32 h-2 bg-gray-200 rounded-full'>
-										<div className='w-24 h-2 bg-orange-500 rounded-full'></div>
-									</div>
-								</div>
-								<div className='flex justify-between items-center'>
-									<span className='text-gray-700'>UI/UX Design</span>
-									<div className='w-32 h-2 bg-gray-200 rounded-full'>
-										<div className='w-20 h-2 bg-orange-500 rounded-full'></div>
-									</div>
-								</div>
-								<div className='flex justify-between items-center'>
-									<span className='text-gray-700'>Backend Development</span>
-									<div className='w-32 h-2 bg-gray-200 rounded-full'>
-										<div className='w-28 h-2 bg-orange-500 rounded-full'></div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -140,7 +129,7 @@ export default function Home() {
 								href='https://issun-app.vercel.app/top'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
@@ -159,14 +148,6 @@ export default function Home() {
 										ZOZOTOWNやユニクロなどから、低身長でも似合う服が集まるwebサービスを作りたかった。口コミの投稿なども出来る。
 										<br />
 										github
-										<Link
-											href='https://github.com/your-username/issun-app'
-											target='_blank'
-											rel='noopener noreferrer'
-											className='text-orange-500 hover:text-orange-600 underline'
-										>
-											View on GitHub
-										</Link>
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
@@ -187,7 +168,7 @@ export default function Home() {
 								href='https://salon-murex.vercel.app/'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
@@ -222,14 +203,14 @@ export default function Home() {
 
 							{/* Website Work Item 3 */}
 							<Link
-								href='https://issun-app.vercel.app/top'
+								href='https://twitter-app-ba0d1.web.app/'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
-										src='/images/portfolio.png'
+										src='/images/X.png'
 										alt='ポートフォリオサイト'
 										width={400}
 										height={300}
@@ -238,19 +219,12 @@ export default function Home() {
 								</div>
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Portfolio Website
+										X(Twitter)クローンアプリ
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										A responsive portfolio website showcasing creative work with
-										smooth animations and modern design principles.{" "}
-										<Link
-											href='https://github.com/your-username/portfolio-2025'
-											target='_blank'
-											rel='noopener noreferrer'
-											className='text-orange-500 hover:text-orange-600 underline'
-										>
-											View on GitHub
-										</Link>
+										Udemyの講座で作成したX(Twitter)クローンアプリ
+										<br />
+										つぶやき、画像投稿、ログイン機能、コメント機能
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
@@ -260,7 +234,7 @@ export default function Home() {
 											TypeScript
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Framer Motion
+											firebase
 										</span>
 									</div>
 								</div>
@@ -275,7 +249,12 @@ export default function Home() {
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 							{/* Design Work Item 1 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+							<Link
+								href='https://www.figma.com/design/hhfRg0imlBFnSP16DglhcL/ISSUN?node-id=0-1&t=uZQyXkYKRRBNHdgW-1'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
 										src='/images/ISSUN_design.png'
@@ -290,20 +269,11 @@ export default function Home() {
 										ISSUNデザインFigma
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										Complete brand identity package including logo design, color
-										palette, typography, and brand guidelines for a tech
-										startup.
+										上記の低身長向けアプリのfigmaデザインです。
+										<br />
+										ZOZOTOWNなど基本のファッションアプリを踏襲しつつ、低身長でもかっこよくありたいとスタイリッシュなデザインを意識しました。
 									</p>
 									<br />
-									<Link
-										href='https://www.figma.com/design/hhfRg0imlBFnSP16DglhcL/ISSUN?node-id=0-1&t=WUFd0Nb2bBIas5e4-1'
-										target='_blank'
-										rel='noopener noreferrer'
-										className='text-orange-500 hover:text-orange-600 underline'
-									>
-										Figma
-									</Link>
-
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Adobe Illustrator
@@ -316,7 +286,7 @@ export default function Home() {
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
 
 							{/* Design Work Item 2 */}
 							<Link
@@ -340,19 +310,55 @@ export default function Home() {
 										訓練校でのデザインポートフォリオ
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										An ambient electronic track featuring atmospheric
-										synthesizers and dreamy melodies, perfect for relaxation and
-										meditation.
+										職業訓練校で制作したポートフォリオPDFです。
+										クライアントワーク、デザイン、バナーなどを制作しました。
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ableton Live
+											illustrator
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Synthesizers
+											photoshop
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ambient
+											HTML/CSS/Javascript
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							{/* Design Work Item 3 */}
+							<Link
+								href='./images/portfolio.pdf#page=16'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/banner.png'
+										alt='sungoi'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										バナー
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										上記記載のポートフォリオPDFのバナーページへのリンクです。
+										<br />
+										わかりにくいので分けました。
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											illustrator
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Photoshop
 										</span>
 									</div>
 								</div>
@@ -371,7 +377,7 @@ export default function Home() {
 								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
@@ -387,20 +393,16 @@ export default function Home() {
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
 										オリジナルソング"NEHAN de ochashite""
 									</h3>
-									<p className='text-gray-600 mb-4'>
-										An ambient electronic track featuring atmospheric
-										synthesizers and dreamy melodies, perfect for relaxation and
-										meditation.
-									</p>
+									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ableton Live
+											作詞/作曲
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Synthesizers
+											DAW
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ambient
+											Premire
 										</span>
 									</div>
 								</div>
@@ -411,7 +413,7 @@ export default function Home() {
 								href='https://youtu.be/8kaESsP3sXg?si=jAtoh8RwxPpHiMFD'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
@@ -428,19 +430,18 @@ export default function Home() {
 										企業案件"すんごい脳みそ""
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										An ambient electronic track featuring atmospheric
-										synthesizers and dreamy melodies, perfect for relaxation and
-										meditation.
+										XのDMで東北新社様から依頼を受けて制作したものです。
+										<br />
+										歌詞と事業の内容をヒアリングし、作曲をしました。
+										<br />
+										レコーディングにも同行。
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ableton Live
+											作曲
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Synthesizers
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ambient
+											音声編集
 										</span>
 									</div>
 								</div>
@@ -451,7 +452,7 @@ export default function Home() {
 								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
 								target='_blank'
 								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
 							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
@@ -467,20 +468,16 @@ export default function Home() {
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
 										オリジナルソング"Fuck'in spicy curry rice""
 									</h3>
-									<p className='text-gray-600 mb-4'>
-										An ambient electronic track featuring atmospheric
-										synthesizers and dreamy melodies, perfect for relaxation and
-										meditation.
-									</p>
+									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ableton Live
+											作詞/作曲
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Synthesizers
+											DAW
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Ambient
+											Premire
 										</span>
 									</div>
 								</div>
@@ -495,7 +492,12 @@ export default function Home() {
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 							{/* 3DCG Work Item 1 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+							<Link
+								href='https://first-threejs-roan.vercel.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<Image
 										src='/images/MYROOM.png'
@@ -510,33 +512,33 @@ export default function Home() {
 										Blender/Three.js "Room"
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										<Link
-											href='https://first-threejs-roan.vercel.app/'
-											target='_blank'
-											rel='noopener noreferrer'
-											className='text-orange-500 hover:text-orange-600 underline'
-										>
-											web site
-										</Link>
+										Blenderで作成した3DモデルをThree.jsで表示したものです。
 									</p>
+
+									<p className='text-gray-600 mb-4'>web site</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Blender
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Product Design
+											Three.js
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Rendering
+											WebGL
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
 
 							{/* 3DCG Work Item 2 */}
-							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow'>
+							<Link
+								href='/images/blender.png'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
 								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-								<Image
+									<Image
 										src='/images/blender.png'
 										alt='sungoi'
 										width={400}
@@ -549,23 +551,16 @@ export default function Home() {
 										Blenderチュートリアル作品
 									</h3>
 									<p className='text-gray-600 mb-4'>
-										Realistic architectural renders for a residential project,
-										featuring detailed interior and exterior views with natural
-										lighting.
+										BlenderのYoutubeチュートリアルで作成したものです。
+										<br />
 									</p>
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											3ds Max
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Architecture
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											V-Ray
+											Blender
 										</span>
 									</div>
 								</div>
-							</div>
+							</Link>
 						</div>
 					</div>
 				</div>
@@ -580,47 +575,64 @@ export default function Home() {
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
-					<div className='grid md:grid-cols-2 gap-12'>
+					<div className='flex justify-center items-center'>
 						<div>
 							<h3 className='text-2xl font-semibold text-gray-900 mb-6'>
 								Get In Touch
 							</h3>
-							<p className='text-gray-600 mb-8'>
-								I'm always interested in new opportunities and exciting
-								projects. Feel free to reach out if you'd like to work together
-								or just say hello!
-							</p>
-							<div className='space-y-4'>
+							<div className='grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center'>
 								<div className='flex items-center space-x-3'>
 									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
-										<span className='text-orange-600 font-semibold'>📧</span>
+										<span className='text-orange-600 font-semibold'>
+											<Image
+												src='/images/X.svg'
+												alt='X'
+												width={20}
+												height={20}
+												className='w-full h-full object-cover'
+											/>
+										</span>
 									</div>
 									<div>
-										<p className='font-semibold text-gray-900'>Email</p>
-										<p className='text-gray-600'>hello@example.com</p>
+										<p className='font-semibold text-gray-900'>X</p>
+										<p className='text-gray-600'>いがみ</p>
 									</div>
 								</div>
 								<div className='flex items-center space-x-3'>
 									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
-										<span className='text-orange-600 font-semibold'>📱</span>
+										<span className='text-orange-600 font-semibold'>
+											<Image
+												src='/images/github.svg'
+												alt='X'
+												width={20}
+												height={20}
+												className='w-full h-full object-cover'
+											/>
+										</span>
 									</div>
 									<div>
-										<p className='font-semibold text-gray-900'>Phone</p>
-										<p className='text-gray-600'>+1 (555) 123-4567</p>
+										<p className='font-semibold text-gray-900'>github</p>
 									</div>
 								</div>
 								<div className='flex items-center space-x-3'>
 									<div className='w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center'>
-										<span className='text-orange-600 font-semibold'>📍</span>
+										<span className='text-orange-600 font-semibold'>
+											<Image
+												src='/images/wantedly.svg'
+												alt='X'
+												width={20}
+												height={20}
+												className='w-full h-full object-cover'
+											/>
+										</span>
 									</div>
 									<div>
-										<p className='font-semibold text-gray-900'>Location</p>
-										<p className='text-gray-600'>Tokyo, Japan</p>
+										<p className='font-semibold text-gray-900'>wantedly</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className='bg-orange-50 p-8 rounded-lg'>
+						{/* <div className='bg-orange-50 p-8 rounded-lg'>
 							<h4 className='text-xl font-semibold text-gray-900 mb-6'>
 								Send a Message
 							</h4>
@@ -662,7 +674,7 @@ export default function Home() {
 									Send Message
 								</button>
 							</form>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</section>
