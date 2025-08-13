@@ -104,8 +104,10 @@ export default function Home() {
 					<div className='max-w-4xl mx-auto py-16 sm:px-2 lg:px-4 mb-4'>
 						<div className='text-center'>
 							<div className='relative inline-block'>
-								<div className='shape-2'></div>
-								<div className='shape-1'></div>
+								<div className='shape-wrapper'>
+									<div className='shape-2'></div>
+									<div className='shape-1'></div>
+								</div>
 								<Image
 									src='/images/profile.jpg'
 									alt='プロフィール写真'
