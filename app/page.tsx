@@ -96,20 +96,22 @@ export default function Home() {
 			<section id='about' className='pt-8 pb-16 bg-white'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-4'>
-						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-8'>
 							ABOUT
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
-					<div className='max-w-4xl mx-auto py-8 sm:px-2 lg:px-4'>
+					<div className='max-w-4xl mx-auto py-8 sm:px-2 lg:px-4 mb-4'>
 						<div className='text-center'>
-							<div className='inline-block'>
+							<div className='relative inline-block'>
+								<div className='shape-2'></div>
+								<div className='shape-1'></div>
 								<Image
 									src='/images/profile.jpg'
 									alt='プロフィール写真'
 									width={300}
 									height={300}
-									className='rounded-full w-64 h-64 object-cover border-4 border-orange-500'
+									className='rounded-full w-64 h-64 object-cover relative z-10'
 								/>
 							</div>
 						</div>
