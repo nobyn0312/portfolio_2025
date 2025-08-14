@@ -10,28 +10,30 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://inouenobuhide.dev"),
   title: "Inoue Nobuhide",
   description: "My Portfolio",
   openGraph: {
     title: "Inoue Nobuhide Portfolio",
-    description: "Web制作・3DCG・音楽などを手がけるポートフォリオサイト",
+    description: "inouenobuhide",
     url: "https://inouenobuhide.dev",
     siteName: "Inoue Nobuhide",
     type: "website",
     locale: "ja_JP",
     images: [
       {
-        url: "https://inouenobuhide.dev/images/og-image.png",
+        url: "/images/og-image.png", // 相対パスOK
         width: 1200,
         height: 630,
+        alt: "Inoue Nobuhide Portfolio サムネイル",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Inoue Nobuhide Portfolio",
-    description: "Web制作・3DCG・音楽などを手がけるポートフォリオサイト",
-    images: ["https://inouenobuhide.dev/images/og-image.png"],
+    description: "inouenobuhide",
+    images: ["/images/og-image.png"],
   },
 };
 
