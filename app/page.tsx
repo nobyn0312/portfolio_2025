@@ -109,7 +109,7 @@ export default function Home() {
 									<div className='shape-1'></div>
 								</div>
 								<Image
-									src='/images/profile.jpg'
+									src='/images/profile.webp'
 									alt='プロフィール写真'
 									width={300}
 									height={300}
@@ -318,7 +318,7 @@ export default function Home() {
 
 							{/* Design Work Item 2 */}
 							<Link
-								href='https://drive.google.com/file/d/11YdUTswrC71ez5_HVwrsZyBab37ucKLd/view'
+								href='/images/portfolio.pdf'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
