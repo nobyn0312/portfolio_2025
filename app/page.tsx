@@ -36,7 +36,7 @@ export default function Home() {
 			<nav className='fixed top-0 w-full  backdrop-blur-md z-50 border-b border-white/20 shadow-lg'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='flex justify-between items-center h-16'>
-						<div className='text-xl font-bold text-gray-900'>Portfolio</div>
+						<div className='text-xl font-light text-gray-900'>Portfolio</div>
 						<div className='hidden md:flex space-x-8'>
 							<a
 								href='#top'
@@ -74,7 +74,7 @@ export default function Home() {
 			>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center'>
-						<h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
+						<h1 className='text-4xl md:text-6xl text-gray-900 mb-6 font-light'>
 							My
 							<span className='text-orange-500'> Portfolio</span>
 						</h1>
@@ -96,7 +96,7 @@ export default function Home() {
 			<section id='about' className='pt-8 pb-16 bg-white'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-4'>
-						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-8'>
+						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-8'>
 							ABOUT
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
@@ -124,9 +124,9 @@ export default function Home() {
 								Inoue Nobuhide
 							</h3>
 							<p className='text-gray-600 mb-6 leading-relaxed'>
-								小さい頃からピアノ漬けで音楽高校・音楽大学に進学
+								小さい頃からピアノと作曲漬けで音楽高校・音楽大学に進学
 								<br />
-								世の中に音楽の仕事が無いじゃないかと絶望する。
+								世の中に音楽の仕事が無いじゃないかと憤り絶望する。
 								<br />
 								教員、販売員などを経て、webデザインを学び、忘れていたものづくりへの情熱を取り戻す。
 								<br />
@@ -141,7 +141,7 @@ export default function Home() {
 			<section id='works' className='py-16 bg-gray-50'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-12'>
-						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-4'>
 							WORKS
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
@@ -149,7 +149,7 @@ export default function Home() {
 
 					{/* Website Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
 							Website
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -272,7 +272,7 @@ export default function Home() {
 
 					{/* Design Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
 							Design
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -394,9 +394,9 @@ export default function Home() {
 						</div>
 					</div>
 
-										{/* 3DCG Category */}
-										<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+					{/* 3DCG Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
 							3DCG
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -475,7 +475,7 @@ export default function Home() {
 
 					{/* Music Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
 							Music
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -598,7 +598,7 @@ export default function Home() {
 			<section id='LINK' className='py-16 bg-white'>
 				<div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-12'>
-						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-4'>
 							LINK
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
