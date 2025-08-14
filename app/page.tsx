@@ -394,6 +394,85 @@ export default function Home() {
 						</div>
 					</div>
 
+										{/* 3DCG Category */}
+										<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+							3DCG
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* 3DCG Work Item 1 */}
+							<Link
+								href='https://first-threejs-roan.vercel.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/MYROOM.png'
+										alt='3DCG'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Blender/Three.js "Room"
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Blenderで作成した3DモデルをThree.jsで表示したものです。
+									</p>
+
+									<p className='text-gray-600 mb-4'>web site</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Blender
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Three.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											WebGL
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							{/* 3DCG Work Item 2 */}
+							<Link
+								href='/images/blender.png'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/blender.png'
+										alt='sungoi'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										Blenderチュートリアル作品
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										BlenderのYoutubeチュートリアルで作成したものです。
+										<br />
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Blender
+										</span>
+									</div>
+								</div>
+							</Link>
+						</div>
+					</div>
+
 					{/* Music Category */}
 					<div className='mb-16'>
 						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
@@ -494,7 +573,7 @@ export default function Home() {
 
 								<div className='p-6'>
 									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										オリジナルソング"Fuck'in spicy curry rice"
+										オリジナルソング"Fuckin' spicy curry rice"
 									</h3>
 									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
 									<div className='flex flex-wrap gap-2'>
@@ -506,85 +585,6 @@ export default function Home() {
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Premire
-										</span>
-									</div>
-								</div>
-							</Link>
-						</div>
-					</div>
-
-					{/* 3DCG Category */}
-					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
-							3DCG
-						</h3>
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-							{/* 3DCG Work Item 1 */}
-							<Link
-								href='https://first-threejs-roan.vercel.app/'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/MYROOM.png'
-										alt='3DCG'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Blender/Three.js "Room"
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										Blenderで作成した3DモデルをThree.jsで表示したものです。
-									</p>
-
-									<p className='text-gray-600 mb-4'>web site</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Blender
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Three.js
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											WebGL
-										</span>
-									</div>
-								</div>
-							</Link>
-
-							{/* 3DCG Work Item 2 */}
-							<Link
-								href='/images/blender.png'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/blender.png'
-										alt='sungoi'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										Blenderチュートリアル作品
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										BlenderのYoutubeチュートリアルで作成したものです。
-										<br />
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Blender
 										</span>
 									</div>
 								</div>
