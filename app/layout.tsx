@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		siteName: "Inoue Nobuhide",
 		images: [
 			{
-				url: "https://inouenobuhide.dev/og-image.png", // 公開されている絶対URL
+				url: "https://inouenobuhide.dev/images/og-image.png", // 公開されている絶対URL
 				width: 1200,
 				height: 630,
 			},
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Inoue Nobuhide",
 		description: "Web制作・3DCG・音楽などを手がけるポートフォリオサイト",
-		images: ["https://inouenobuhide.dev/og-image.png"],
+		images: ["https://inouenobuhide.dev/images/og-image.png"],
 	},
 };
 
