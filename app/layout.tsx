@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     images: [
       {
-        url: "/images/og-image.png", // 相対パスOK
+        url: "https://inouenobuhide.dev/images/og-image.png", // 相対パスOK
         width: 1200,
         height: 630,
         alt: "Inoue Nobuhide Portfolio サムネイル",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Inoue Nobuhide Portfolio",
     description: "inouenobuhide",
-    images: ["/images/og-image.png"],
+    images: ["https://inouenobuhide.dev/images/og-image.png"],
   },
 };
 
