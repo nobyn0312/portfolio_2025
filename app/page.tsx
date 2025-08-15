@@ -111,9 +111,9 @@ export default function Home() {
 								<Image
 									src='/images/profile.webp'
 									alt='プロフィール写真'
-									width={300}
-									height={300}
-									className='rounded-full w-64 h-64 object-cover relative z-10'
+									width={256}
+									height={256}
+									className='rounded-full w-50 h-50 object-cover relative z-10'
 								/>
 							</div>
 						</div>
