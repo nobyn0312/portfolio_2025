@@ -432,9 +432,6 @@ export default function Home() {
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Three.js
 										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											WebGL
-										</span>
 									</div>
 								</div>
 							</Link>
