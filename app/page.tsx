@@ -606,7 +606,7 @@ export default function Home() {
 								Get In Touch
 							</h3> */}
 							<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-								<Link
+								{/* <Link
 									href='https://x.com/igami0312'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -626,7 +626,7 @@ export default function Home() {
 									<div>
 										<p className='font-semibold text-gray-900'>X</p>
 									</div>
-								</Link>
+								</Link> */}
 								<Link
 									href='https://github.com/nobyn0312'
 									target='_blank'
@@ -648,7 +648,7 @@ export default function Home() {
 										<p className='font-semibold text-gray-900'>github</p>
 									</div>
 								</Link>
-								{/* <Link
+								<Link
 									href='https://www.wantedly.com/id/inoue_nobuhide'
 									target='_blank'
 									rel='noopener noreferrer'
@@ -668,7 +668,7 @@ export default function Home() {
 									<div>
 										<p className='font-semibold text-gray-900'>Zenn</p>
 									</div>
-								</Link> */}
+								</Link>
 								<Link
 									href='https://zenn.dev/nobyn0312'
 									target='_blank'
