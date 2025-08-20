@@ -109,7 +109,7 @@ export default function Home() {
 									<div className='shape-1'></div>
 								</div>
 								<Image
-									src='/images/profile.webp'
+									src='/images/profile.png'
 									alt='プロフィール写真'
 									width={256}
 									height={256}
