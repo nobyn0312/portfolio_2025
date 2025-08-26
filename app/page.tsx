@@ -91,7 +91,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-
 			{/* ABOUT Section */}
 			<section id='about' className='pt-8 pb-16 bg-white'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -399,6 +398,35 @@ export default function Home() {
 						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
 							3DCG
 						</h3>
+
+						{/* Featured Video - 目玉コンテンツ */}
+						<div className='mb-12 flex justify-center'>
+							<div className='max-w-4xl w-full bg-white rounded-xl shadow-xl overflow-hidden border-4 border-orange-500 hover:shadow-2xl transition-all hover:scale-105'>
+								<div className='relative'>
+									<video
+										src='/images/chiikawarooms.mp4'
+										controls
+										className='w-full h-auto'
+									>
+										Your browser does not support the video tag.
+									</video>
+								</div>
+								<div className='p-8 text-center'>
+									<h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+										Chiikawa Rooms
+									</h3>
+									<p className='text-gray-600 mb-6 text-lg leading-relaxed'>
+										Blenderで作成したムービー
+									</p>
+									<div className='flex flex-wrap gap-3 justify-center'>
+										<span className='px-4 py-2 bg-orange-100 text-orange-700 text-sm rounded-full font-semibold'>
+											Blender
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 							{/* 3DCG Work Item 1 */}
 							<Link
