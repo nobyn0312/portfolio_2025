@@ -94,11 +94,11 @@ export default function Home() {
 			{/* ABOUT Section */}
 			<section id='about' className='pt-8 pb-16 bg-white'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
-					<div className='text-center mb-4'>
-						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-8'>
+					<div className='text-center mb-4 relative z-10'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-8'>
 							ABOUT
 						</h2>
-						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
+						<div className='w-20 h-1 mx-auto'></div>
 					</div>
 					<div className='max-w-4xl mx-auto py-16 sm:px-2 lg:px-4 mb-4'>
 						<div className='text-center'>
@@ -118,7 +118,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='max-w-xl mx-auto px-2 sm:px-2 lg:px-4 items-center'>
-						<div>
+						<div className="relative z-10">
 							<h3 className='text-2xl font-semibold text-gray-900 mb-4'>
 								Inoue Nobuhide
 							</h3>
@@ -140,7 +140,7 @@ export default function Home() {
 			<section id='works' className='py-16 bg-gray-50'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-12'>
-						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-4'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
 							WORKS
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
@@ -148,7 +148,7 @@ export default function Home() {
 
 					{/* Website Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
 							Website
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -271,7 +271,7 @@ export default function Home() {
 
 					{/* Design Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
 							Design
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -395,7 +395,7 @@ export default function Home() {
 
 					{/* 3DCG Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
 							3DCG
 						</h3>
 
@@ -500,7 +500,7 @@ export default function Home() {
 
 					{/* Music Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-light text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
 							Music
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>

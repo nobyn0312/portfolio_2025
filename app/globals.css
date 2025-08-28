@@ -1,81 +1,104 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-outfit), sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-outfit), sans-serif;
 }
 
 .shape-wrapper {
+	overflow: hidden;
+}
+
+#about{
   overflow: hidden;
 }
 
 .shape-1 {
-  position: absolute;
-  top: 46%;
-  left: 66%;
-  width: 270px;
-  height: 270px;
-  background-color: #f97316;
-  border-radius: 68% 82% 64% 66% / 76% 60% 64% 70%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  animation: rotation1 10s linear infinite;
+	position: absolute;
+	top: 14%;
+  left:200%;
+	width: 740px;
+	height: 750px;
+	background-color: #f97416c6;
+	border-radius: 68% 82% 64% 66% / 76% 60% 64% 70%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	animation: rotation1 10s linear infinite;
 }
 
 /* 円2（一番後ろ、少し大きめ＆薄い色） */
 .shape-2 {
-  position: absolute;
-  top: 60%;
-  left:35%;
-  width: 250px;
-  height: 250px;
-  background-color: rgb(249, 234, 22);
-  border-radius: 66% 62% 84% 76% / 62% 70% 84% 64%;
-  z-index: 1;
-  animation: blob2 10s ease-in-out infinite, rotation2 20s linear infinite;
+	position: absolute;
+	top: 46%;
+	right: -120%;
+	width: 700px;
+	height: 720px;
+	background-color: rgba(249, 234, 22, 0.798);
+	border-radius: 66% 62% 84% 76% / 62% 70% 84% 64%;
+	z-index: 1;
+	animation: blob2 10s ease-in-out infinite, rotation2 20s linear infinite;
 }
-
 
 /* 形の変化アニメーション（別パターン） */
 @keyframes blob1 {
-  0%   { border-radius: 70% 20% 50% 30% / 30% 50% 70% 40%; }
-  50%  { border-radius: 50% 40% 30% 60% / 40% 30% 60% 50%; }
-  100% { border-radius: 70% 20% 50% 30% / 30% 50% 70% 40%; }
+	0% {
+		border-radius: 70% 20% 50% 30% / 30% 50% 70% 40%;
+	}
+	50% {
+		border-radius: 50% 40% 30% 60% / 40% 30% 60% 50%;
+	}
+	100% {
+		border-radius: 70% 20% 50% 30% / 30% 50% 70% 40%;
+	}
 }
 
 @keyframes blob2 {
-  0%   { border-radius: 60% 30% 40% 70% / 50% 60% 30% 50%; }
-  50%  { border-radius: 40% 50% 60% 40% / 60% 30% 50% 40%; }
-  100% { border-radius: 60% 30% 40% 70% / 50% 60% 30% 50%; }
+	0% {
+		border-radius: 60% 30% 40% 70% / 50% 60% 30% 50%;
+	}
+	50% {
+		border-radius: 40% 50% 60% 40% / 60% 30% 50% 40%;
+	}
+	100% {
+		border-radius: 60% 30% 40% 70% / 50% 60% 30% 50%;
+	}
 }
 
 /* 回転アニメーション */
 @keyframes rotation1 {
-  0%   { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
 }
 
 @keyframes rotation2 {
-  0%   { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(-360deg); }
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-360deg);
+	}
 }
