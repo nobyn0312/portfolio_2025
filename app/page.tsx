@@ -74,7 +74,7 @@ export default function Home() {
 			>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center'>
-						<h1 className='text-4xl md:text-6xl text-gray-900 mb-6 font-light'>
+						<h1 className='text-4xl md:text-6xl text-gray-900 mb-6 font-bold'>
 							My
 							<span className='text-orange-500'> Portfolio</span>
 						</h1>
