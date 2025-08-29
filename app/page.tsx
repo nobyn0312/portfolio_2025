@@ -36,7 +36,7 @@ export default function Home() {
 			<nav className='fixed top-0 w-full  backdrop-blur-md z-50 border-b border-white/20 shadow-lg'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='flex justify-between items-center h-16'>
-						<div className='text-xl font-light text-gray-900'>Portfolio</div>
+						<div className='text-xl font-light text-gray-900 tracking-wider'>Portfolio</div>
 						<div className='hidden md:flex space-x-8'>
 							<a
 								href='#top'
@@ -74,9 +74,9 @@ export default function Home() {
 			>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center'>
-						<h1 className='text-4xl md:text-6xl text-gray-900 mb-6 font-bold'>
+						<h1 className='text-4xl md:text-6xl text-gray-900 mb-6 font-bold tracking-wider'>
 							My
-							<span className='text-orange-500'> Portfolio</span>
+							<span className='text-orange-500 tracking-wider'> Portfolio</span>
 						</h1>
 						{/* <p className='text-xl text-gray-600 mb-8 max-w-2xl mx-auto'>
 							Creative developer passionate about building beautiful and
@@ -95,7 +95,7 @@ export default function Home() {
 			<section id='about' className='pt-8 pb-16 bg-white'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-4 relative z-10'>
-						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-8'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-8 tracking-wider'>
 							ABOUT
 						</h2>
 						<div className='w-20 h-1 mx-auto'></div>
@@ -119,7 +119,7 @@ export default function Home() {
 					</div>
 					<div className='max-w-xl mx-auto px-2 sm:px-2 lg:px-4 items-center'>
 						<div className="relative z-10">
-							<h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+							<h3 className='text-2xl font-semibold text-gray-900 mb-4 tracking-wider'>
 								Inoue Nobuhide
 							</h3>
 							<p className='text-gray-600 mb-6 leading-relaxed'>
@@ -140,7 +140,7 @@ export default function Home() {
 			<section id='works' className='py-16 bg-gray-50'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-12'>
-						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
+						<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-wider'>
 							WORKS
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
@@ -148,7 +148,7 @@ export default function Home() {
 
 					{/* Website Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
 							Website
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -169,7 +169,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										低身長向けファッションアプリ
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -207,7 +207,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										salon
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -245,7 +245,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										X(Twitter)クローンアプリ
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -271,7 +271,7 @@ export default function Home() {
 
 					{/* Design Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
 							Design
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -292,7 +292,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										ISSUNデザインFigma
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -333,7 +333,7 @@ export default function Home() {
 								</div>
 
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										訓練校でのデザインポートフォリオ
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -372,7 +372,7 @@ export default function Home() {
 								</div>
 
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										バナー
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -395,7 +395,7 @@ export default function Home() {
 
 					{/* 3DCG Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
 							3DCG
 						</h3>
 
@@ -412,7 +412,7 @@ export default function Home() {
 									</video>
 								</div>
 								<div className='p-8 text-center'>
-									<h3 className='text-2xl font-semibold text-gray-900 mb-4'>
+									<h3 className='text-2xl font-semibold text-gray-900 mb-4 tracking-wider'>
 										Chiikawa Rooms
 									</h3>
 									<p className='text-gray-600 mb-6 text-lg leading-relaxed'>
@@ -445,7 +445,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										Blender/Three.js "Room"
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -481,7 +481,7 @@ export default function Home() {
 									/>
 								</div>
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										Blenderチュートリアル作品
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -500,7 +500,7 @@ export default function Home() {
 
 					{/* Music Category */}
 					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
 							Music
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -522,7 +522,7 @@ export default function Home() {
 								</div>
 
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										オリジナルソング"NEHAN de ochashite"
 									</h3>
 									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
@@ -558,7 +558,7 @@ export default function Home() {
 								</div>
 
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										企業案件"すんごい脳みそ"
 									</h3>
 									<p className='text-gray-600 mb-4'>
@@ -597,7 +597,7 @@ export default function Home() {
 								</div>
 
 								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										オリジナルソング"Fuckin' spicy curry rice"
 									</h3>
 									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
@@ -623,7 +623,7 @@ export default function Home() {
 			<section id='LINK' className='py-16 bg-white'>
 				<div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='text-center mb-12'>
-						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-4'>
+						<h2 className='text-3xl md:text-4xl font-light text-gray-900 mb-4 tracking-wider'>
 							LINK
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>

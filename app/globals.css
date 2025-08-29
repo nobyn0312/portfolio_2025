@@ -8,8 +8,8 @@
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--font-sans: var(--font-texgyread);
+	--font-mono: var(--font-texgyread);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,21 +22,21 @@
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: var(--font-outfit), sans-serif;
+	font-family: var(--font-texgyread), sans-serif;
 }
 
 .shape-wrapper {
 	overflow: hidden;
 }
 
-#about{
-  overflow: hidden;
+#about {
+	overflow: hidden;
 }
 
 .shape-1 {
 	position: absolute;
 	top: 14%;
-  left:200%;
+	left: 200%;
 	width: 740px;
 	height: 750px;
 	background-color: #f97416c6;
