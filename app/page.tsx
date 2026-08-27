@@ -153,7 +153,7 @@ export default function Home() {
 						</h3>
 						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 							{/* Website Work Item 1 */}
-							<Link
+							{/* <Link
 								href='https://issun-app.vercel.app/top'
 								target='_blank'
 								rel='noopener noreferrer'
@@ -185,6 +185,43 @@ export default function Home() {
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											firebase
+										</span>
+									</div>
+								</div>
+							</Link> */}
+
+<Link
+								href='https://caloreco-uuvj.vercel.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/caloreco_thum.png'
+										alt='カロレコ'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										AIカロリー計算アプリ
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										日々のカロリー計算をもっと楽に。AIに食べたものを入力するだけでカロリーの記録をしてくれるアプリ。PFCバランスをもとにしてAIからのアドバイスもしてくれます。
+										<br />
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Tailwind
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											supabase
 										</span>
 									</div>
 								</div>
