@@ -1,34 +1,38 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
-import type { Metadata } from "next";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { OrbitControls, ScrollControls, useGLTF, useScroll } from "@react-three/drei";
+import { Suspense, useRef } from "react";
 
-export const metadata: Metadata = {
-	title: "ポートフォリオ",
-	description: "Inoue Nobuhide のポートフォリオサイト",
-	openGraph: {
-		title: "ポートフォリオ",
-		description: "Inoue Nobuhide のポートフォリオサイト",
-		url: "https://inouenobuhide.dev/images/og-image.png",
-		siteName: "ポートフォリオ",
-		images: [
-			{
-				url: "https://inouenobuhide.dev/images/og-image.png",
-				width: 1200,
-				height: 630,
-			},
-		],
-		locale: "ja_JP",
-		type: "website",
-	},
-	twitter: {
-		card: "summary_large_image", // 大きい画像表示
-		title: "ポートフォリオ",
-		description: "Inoue Nobuhide のポートフォリオサイト",
-		images: ["https://inouenobuhide.dev/images/og-image.png"],
-		creator: "@igami0312", // 任意
-	},
-};
+function Model() {
+  const { scene } = useGLTF("/images/capsule.glb"); // public/capsule.glb
+  const ref = useRef();
+  const scroll = useScroll(); // スクロール位置を取得
+  const { camera } = useThree(); // カメラを取得
 
+  useFrame(() => {
+    if (ref.current) {
+      // スクロールで回転（Y軸を360度）
+      ref.current.rotation.y = scroll.offset * Math.PI * 2;
+
+      // スクロールで拡大（カメラを近づける: Zを10から2に減少）
+      camera.position.z = 10 - (scroll.offset * 8); // 初期Z=10, 終了時Z=2
+      camera.lookAt(0, 0, 0); // 常に中心を注視
+    }
+  });
+
+  return <primitive ref={ref} object={scene} />;
+}
+
+function CameraSetup() {
+  const { camera } = useThree();
+  // 初期カメラ位置: 斜め45度、やや上から
+  camera.position.set(5, 5, 10); // X:5（右）, Y:5（上）, Z:10（奥、拡大の初期値）
+  camera.lookAt(0, 0, 0);
+  return null;
+}
 export default function Home() {
 	return (
 		<div className='min-h-screen bg-white'>
@@ -136,6 +140,31 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<div style={{ height: "200vh" }}> {/* 全体の高さを200vhに設定（スクロール領域確保） */}
+      <section id="blender" style={{ height: "40vh", position: "sticky", top: 0 }}>
+        <Canvas>
+          <Suspense fallback={null}>
+            <ambientLight intensity={1.5} /> {/* 照明強化 */}
+            <directionalLight position={[5, 5, 5]} intensity={2} />
+            <pointLight position={[10, 10, 10]} intensity={1.5} />
+            <ScrollControls pages={1} damping={0.1}> {/* pages=1: 1画面分だけスクロール制御 */}
+              <Model />
+              <CameraSetup /> {/* 初期カメラ設定 */}
+              <OrbitControls
+                enablePan={false} // パン無効（スクロール外れやすく）
+                enableZoom={false} // ズーム手動無効（スクロール拡大に任せる）
+                enableRotate={true} // 回転許可
+                target={[0, 0, 0]}
+              />
+            </ScrollControls>
+          </Suspense>
+        </Canvas>
+      </section>
+      {/* 次のコンテンツ: スクロール制御終了後にここに進む */}
+      <div style={{ height: "100vh", background: "lightblue" }}>次のコンテンツ 1</div>
+      <div style={{ height: "100vh", background: "lightgreen" }}>次のコンテンツ 2</div>
+    </div>
 
 			{/* WORKS Section */}
 			<section id='works' className='py-16 bg-gray-50'>
