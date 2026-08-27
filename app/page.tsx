@@ -145,6 +145,124 @@ export default function Home() {
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
+					{/* Music Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
+							Music
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* Music Work Item 1 */}
+							<Link
+								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/NEHAN.png'
+										alt='NEHAN'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										オリジナルソング"NEHAN de ochashite"
+									</h3>
+									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											作詞/作曲
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											DAW
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Premire
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							{/* Music Work Item 2 */}
+							<Link
+								href='https://youtu.be/8kaESsP3sXg?si=jAtoh8RwxPpHiMFD'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/sungoi.png'
+										alt='sungoi'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										企業案件"すんごい脳みそ"
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										XのDMで東北新社様から依頼を受けて制作したものです。
+										<br />
+										歌詞と事業の内容をヒアリングし、作曲をしました。
+										<br />
+										レコーディングにも同行しました。
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											作曲
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											音声編集
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							{/* Music Work Item 3 */}
+							<Link
+								href='https://youtu.be/5t4FVr7TGHU?si=jFa2mRxQkDYmz7CL'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/curry.png'
+										alt='curry'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										オリジナルソング"Fuckin' spicy curry rice"
+									</h3>
+									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											作詞/作曲
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											DAW
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Premire
+										</span>
+									</div>
+								</div>
+							</Link>
+						</div>
+					</div>
 
 					{/* Website Category */}
 					<div className='mb-16'>
@@ -528,125 +646,6 @@ export default function Home() {
 									<div className='flex flex-wrap gap-2'>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Blender
-										</span>
-									</div>
-								</div>
-							</Link>
-						</div>
-					</div>
-
-					{/* Music Category */}
-					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
-							Music
-						</h3>
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-							{/* Music Work Item 1 */}
-							<Link
-								href='https://youtu.be/PugY1Abrzw0?si=aOt9YA7PlNj_o9Vd'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/NEHAN.png'
-										alt='NEHAN'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
-										オリジナルソング"NEHAN de ochashite"
-									</h3>
-									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											作詞/作曲
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											DAW
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Premire
-										</span>
-									</div>
-								</div>
-							</Link>
-
-							{/* Music Work Item 2 */}
-							<Link
-								href='https://youtu.be/8kaESsP3sXg?si=jAtoh8RwxPpHiMFD'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/sungoi.png'
-										alt='sungoi'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
-										企業案件"すんごい脳みそ"
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										XのDMで東北新社様から依頼を受けて制作したものです。
-										<br />
-										歌詞と事業の内容をヒアリングし、作曲をしました。
-										<br />
-										レコーディングにも同行しました。
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											作曲
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											音声編集
-										</span>
-									</div>
-								</div>
-							</Link>
-
-							{/* Music Work Item 3 */}
-							<Link
-								href='https://youtu.be/5t4FVr7TGHU?si=jFa2mRxQkDYmz7CL'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/curry.png'
-										alt='curry'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
-										オリジナルソング"Fuckin' spicy curry rice"
-									</h3>
-									<p className='text-gray-600 mb-4'>作詞作曲と動画編集</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											作詞/作曲
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											DAW
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Premire
 										</span>
 									</div>
 								</div>
