@@ -108,7 +108,7 @@ export default function Home() {
 									<div className='shape-1'></div>
 								</div>
 								<Image
-									src='/images/profile.png'
+									src='/images/profile2.jpg'
 									alt='プロフィール写真'
 									width={256}
 									height={256}
