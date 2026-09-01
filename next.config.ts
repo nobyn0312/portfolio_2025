@@ -7,6 +7,17 @@ const nextConfig: NextConfig = {
 	turbopack: {
 		root: path.join(__dirname),
 	},
+	async rewrites() {
+		return [{ source: "/top", destination: "/" }];
+	},
+	async headers() {
+		return [
+			{
+				source: "/top",
+				headers: [{ key: "Clear-Site-Data", value: '"cache"' }],
+			},
+		];
+	},
 };
 
 export default nextConfig;

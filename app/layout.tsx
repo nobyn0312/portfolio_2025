@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import StripCachedTopPath from "./StripCachedTopPath";
 import "./globals.css";
 
 const texgyread = localFont({
@@ -64,7 +65,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='ja'>
-			<body className={`${texgyread.variable} antialiased`}>{children}</body>
+			<body className={`${texgyread.variable} antialiased`}>
+				<StripCachedTopPath />
+				{children}
+			</body>
 		</html>
 	);
 }
