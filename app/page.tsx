@@ -36,7 +36,9 @@ export default function Home() {
 			<nav className='fixed top-0 w-full  backdrop-blur-md z-50 border-b border-white/20 shadow-lg'>
 				<div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='flex justify-between items-center h-16'>
-						<div className='text-xl font-light text-gray-900 tracking-wider'>Portfolio</div>
+						<div className='text-xl font-light text-gray-900 tracking-wider'>
+							Portfolio
+						</div>
 						<div className='hidden md:flex space-x-8'>
 							<a
 								href='#top'
@@ -118,7 +120,7 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='max-w-xl mx-auto px-2 sm:px-2 lg:px-4 items-center'>
-						<div className="relative z-10">
+						<div className='relative z-10'>
 							<h3 className='text-2xl font-semibold text-gray-900 mb-4 tracking-wider'>
 								Inoue Nobuhide
 							</h3>
@@ -145,6 +147,404 @@ export default function Home() {
 						</h2>
 						<div className='w-20 h-1 bg-orange-500 mx-auto'></div>
 					</div>
+					{/* Website Category */}
+					<div className='mb-16'>
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
+							Website
+						</h3>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							{/* Website Work Item 1 */}
+
+							<Link
+								href='https://xplace.tokyo/#casino'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/ibjonline.jpg'
+										alt='ibjonline'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										ibjonline
+									</h3>
+									<ul className='text-gray-600 mb-4 list-disc pl-5 space-y-1'>
+										<li>Next.js / TypeScript によるフロントエンド開発</li>
+										<li>API 通信処理の実装</li>
+										<li>TanStack Query を利用した API データの取得・管理</li>
+										<li>Orval を利用した API クライアントの自動生成</li>
+										<li>API 仕様に基づいた画面・機能の実装</li>
+										<li>Jest を利用した単体テストの作成</li>
+										<li>既存機能の改修・保守</li>
+									</ul>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											SSR
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							<Link
+								href='https://www.ibjapan.com/kaisetu/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/kaigyo.jpg'
+										alt='開業支援サイトNext.jsリプレイス'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										結婚相談所開業サイトNext.jsリプレイス
+									</h3>
+									<ul className='text-gray-600 mb-4 list-disc pl-5 space-y-1'>
+										<li>Next.js / TypeScript を用いたフロントエンド実装</li>
+										<li>SSG（Static Site Generation）を利用したページ生成</li>
+										<li>ページ表示速度を考慮したフロントエンドの最適化</li>
+										<li>
+											既存 LP の構成・仕様を踏まえた Next.js へのリプレイス
+										</li>
+										<li>UI・画面仕様に関する事業部との確認・調整</li>
+										<li>
+											インド人スタッフ 2
+											名との開発上のコミュニケーション/英語を交えた仕様確認・タスク調整
+										</li>
+										<li>事業部と開発メンバー間の橋渡し</li>
+										<li>開発内容や対応事項の整理・共有</li>
+									</ul>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							<Link
+								href='https://www.ibjapan.jp/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/IBJcorporate.jpg'
+										alt='コーポレートサイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										IBJコーポレートサイト
+									</h3>
+									<p className='text-gray-600 mb-2'>
+										自社コーポレートサイトおよび IR サイトの制作・改修を担当。
+									</p>
+									<ul className='text-gray-600 mb-4 list-disc pl-5 space-y-1'>
+										<li>JavaScript / jQuery を利用した機能実装</li>
+										<li>都道府県別の絞り込み機能の実装</li>
+										<li>店舗選択時の定休日表示機能の実装</li>
+									</ul>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											WordPress
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											JavaScript
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							<Link
+								href='https://www.ibj-gl.com/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/IBJen.jpg'
+										alt='海外投資家向けコーポレートサイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										海外投資家向けコーポレートサイト
+									</h3>
+									<ul className='text-gray-600 mb-4 list-disc pl-5 space-y-1'>
+										<li>WordPress への移行およびサイトリニューアル</li>
+										<li>カスタム投稿タイプの設計・実装</li>
+										<li>PHP を利用した WordPress の機能カスタマイズ</li>
+										<li>
+											1 つの投稿内容を複数の固定ページへ自動反映する仕組みの実装
+										</li>
+										<li>サイト構成・更新方法の改善</li>
+									</ul>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											WordPress
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											JavaScript
+										</span>
+									</div>
+								</div>
+							</Link>
+
+
+							<Link
+								href='https://reserve.ibjapan.jp/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/ibj-reserve.png'
+										alt='レストラン予約サイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+									レストラン予約サイト
+									</h3>
+									<ul className='text-gray-600 mb-4 list-disc pl-5 space-y-1'>
+										<li>Next.js によるフロントエンド実装 UI コンポーネントの設計・作成</li>
+										<li>Storybook によるコンポーネント管理</li>
+										<li>Jest による単体テストの作成</li>
+										<li>再利用性を考慮した UI コンポーネントの実装</li>
+										<li>既存画面・UI の改修</li>
+									</ul>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+									</div>
+								</div>
+							</Link>
+
+							<Link
+								href='https://xplace.tokyo/#casino'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/xcasino.jpg'
+										alt='ディーラー向け顧客管理アプリ'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										ディーラー向け顧客管理アプリ
+									</h3>
+									<ul className='text-gray-600 mb-4 list-disc pl-5 space-y-1'>
+										<li>Next.js によるフロントエンド実装</li>
+										<li>UI・画面の実装</li>
+										<li>既存機能の改修</li>
+										<li>仕様に基づいた画面・機能の実装</li>
+									</ul>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+									</div>
+								</div>
+							</Link>
+						</div>
+
+						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider pt-15'>
+							個人開発
+						</h3>
+						<ul className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 list-none'>
+							<li>
+								<Link
+								href='https://issun-app.vercel.app/top'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/issun_top.png'
+										alt='低身長向けファッションアプリ'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										低身長向けファッションアプリ
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										ZOZOTOWNやユニクロなどから、低身長でも似合う服が集まるwebサービスを考えました。口コミの投稿なども出来るようにしました。
+										<br />
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Tailwind
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											firebase
+										</span>
+									</div>
+								</div>
+								</Link>
+							</li>
+
+							<li>
+								<Link
+								href='https://caloreco-uuvj.vercel.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/caloreco_thum.png'
+										alt='カロレコ'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
+										AIカロリー計算アプリ
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										日々のカロリー計算をもっと楽に。AIに食べたものを入力するだけでカロリーの記録をしてくれるアプリ。PFCバランスをもとにしてAIからのアドバイスもしてくれます。
+										<br />
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Tailwind
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											supabase
+										</span>
+									</div>
+								</div>
+								</Link>
+							</li>
+
+							<li>
+								<Link
+								href='https://salon-murex.vercel.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/salon-site.png'
+										alt='サロンサイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										salon
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										クライアントワークで作成した美容院のサイトのモック
+										<br />
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											HTML
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											CSS
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Javascript
+										</span>
+									</div>
+								</div>
+								</Link>
+							</li>
+
+							<li>
+								<Link
+								href='https://twitter-app-ba0d1.web.app/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
+							>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
+									<Image
+										src='/images/X.png'
+										alt='ポートフォリオサイト'
+										width={400}
+										height={300}
+										className='w-full h-full object-cover'
+									/>
+								</div>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
+										X(Twitter)クローンアプリ
+									</h3>
+									<p className='text-gray-600 mb-4'>
+										Udemyの講座で作成したX(Twitter)クローンアプリ
+										<br />
+										つぶやき、画像投稿、ログイン機能、コメント機能
+									</p>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											Next.js
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											TypeScript
+										</span>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
+											firebase
+										</span>
+									</div>
+								</div>
+								</Link>
+							</li>
+						</ul>
+					</div>
+
 					{/* Music Category */}
 					<div className='mb-16'>
 						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
@@ -257,166 +657,6 @@ export default function Home() {
 										</span>
 										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Premire
-										</span>
-									</div>
-								</div>
-							</Link>
-						</div>
-					</div>
-
-					{/* Website Category */}
-					<div className='mb-16'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
-							Website
-						</h3>
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-							{/* Website Work Item 1 */}
-							<Link
-								href='https://issun-app.vercel.app/top'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/issun_top.png'
-										alt='低身長向けファッションアプリ'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
-										低身長向けファッションアプリ
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										ZOZOTOWNやユニクロなどから、低身長でも似合う服が集まるwebサービスを考えました。口コミの投稿なども出来るようにしました。
-										<br />
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Next.js
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Tailwind
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											firebase
-										</span>
-									</div>
-								</div>
-							</Link>
-
-<Link
-								href='https://caloreco-uuvj.vercel.app/'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/caloreco_thum.png'
-										alt='カロレコ'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2'>
-										AIカロリー計算アプリ
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										日々のカロリー計算をもっと楽に。AIに食べたものを入力するだけでカロリーの記録をしてくれるアプリ。PFCバランスをもとにしてAIからのアドバイスもしてくれます。
-										<br />
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Next.js
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Tailwind
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											supabase
-										</span>
-									</div>
-								</div>
-							</Link>
-
-							{/* Website Work Item 2 */}
-							<Link
-								href='https://salon-murex.vercel.app/'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/salon-site.png'
-										alt='サロンサイト'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
-										salon
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										クライアントワークで作成した美容院のサイトのモック
-										<br />
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											HTML
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											CSS
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Javascript
-										</span>
-									</div>
-								</div>
-							</Link>
-
-							{/* Website Work Item 3 */}
-							<Link
-								href='https://twitter-app-ba0d1.web.app/'
-								target='_blank'
-								rel='noopener noreferrer'
-								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
-							>
-								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
-									<Image
-										src='/images/X.png'
-										alt='ポートフォリオサイト'
-										width={400}
-										height={300}
-										className='w-full h-full object-cover'
-									/>
-								</div>
-								<div className='p-6'>
-									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
-										X(Twitter)クローンアプリ
-									</h3>
-									<p className='text-gray-600 mb-4'>
-										Udemyの講座で作成したX(Twitter)クローンアプリ
-										<br />
-										つぶやき、画像投稿、ログイン機能、コメント機能
-									</p>
-									<div className='flex flex-wrap gap-2'>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											Next.js
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											TypeScript
-										</span>
-										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
-											firebase
 										</span>
 									</div>
 								</div>
