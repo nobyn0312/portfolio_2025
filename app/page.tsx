@@ -793,36 +793,32 @@ export default function Home() {
 						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center tracking-wider'>
 							3DCG
 						</h3>
-
-						{/* Featured Video - 目玉コンテンツ */}
-						<div className='mb-12 flex justify-center'>
-							<div className='max-w-4xl w-full bg-white rounded-xl shadow-xl overflow-hidden border-4 border-orange-500 hover:shadow-2xl transition-all hover:scale-105'>
-								<div className='relative'>
+						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+							<div className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'>
+								<div className='h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center'>
 									<video
 										src='/images/chiikawarooms.mp4'
 										controls
-										className='w-full h-auto'
+										className='w-full h-full object-cover'
 									>
 										Your browser does not support the video tag.
 									</video>
 								</div>
-								<div className='p-8 text-center'>
-									<h3 className='text-2xl font-semibold text-gray-900 mb-4 tracking-wider'>
+								<div className='p-6'>
+									<h3 className='text-xl font-semibold text-gray-900 mb-2 tracking-wider'>
 										Chiikawa Rooms
 									</h3>
-									<p className='text-gray-600 mb-6 text-lg leading-relaxed'>
+									<p className='text-gray-600 mb-4'>
 										Blenderで作成したムービー
 									</p>
-									<div className='flex flex-wrap gap-3 justify-center'>
-										<span className='px-4 py-2 bg-orange-100 text-orange-700 text-sm rounded-full font-semibold'>
+									<div className='flex flex-wrap gap-2'>
+										<span className='px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full'>
 											Blender
 										</span>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
 							{/* 3DCG Work Item 1 */}
 							<Link
 								href='https://first-threejs-roan.vercel.app/'
