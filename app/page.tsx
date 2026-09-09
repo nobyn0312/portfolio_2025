@@ -156,7 +156,7 @@ export default function Home() {
 							{/* Website Work Item 1 */}
 
 							<Link
-								href='https://xplace.tokyo/#casino'
+								href='https://www.ibjonline.jp/'
 								target='_blank'
 								rel='noopener noreferrer'
 								className='block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105 border-2 border-orange-500'
